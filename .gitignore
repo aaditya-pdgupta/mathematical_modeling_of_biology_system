@@ -1,0 +1,9 @@
+# Byte-compiled / optimized / DLL files
+_pycache_/
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebook
+*.ipynb_checkpoints
