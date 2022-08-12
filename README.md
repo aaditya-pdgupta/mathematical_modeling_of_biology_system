@@ -133,3 +133,7 @@ Where
 * $\gamma_{3}$ is degradation rate of $G_{3}$
 * c = constant
 * n =  hill constant 
+
+<p align="center">
+  <img src="../main/Oscillating_Gene_Network/Oscillating_Gene_Network_1.jpg" />
+</p>
