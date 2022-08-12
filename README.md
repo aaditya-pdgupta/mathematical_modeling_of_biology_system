@@ -176,8 +176,8 @@ In computional biology one motive for using stochastics modeling is to calculate
 The differential equation for Stochastics Modelings:
 
 $$\frac{dG_1}{dt} = \left[\frac{c^{n}}{c^{n} + G_{3}^{n}}\right]k_{1} - \gamma_{1}G_{1}$$
-$$\frac{dG_2}{dt} = \left[\frac{G_{1}^{n}}{c^{n} + G_{1}^{n}}\right]k_{2} - \gamma_{2}G_{2}$$
-$$\frac{dG_3}{dt} = \left[\frac{G_{2}^{n}}{c^{n} + G_{2}^{n}}\right]k_{3} - \gamma_{3}G_{3}$$
+$$\frac{dG_2}{dt} = \left[\frac{G_{1}^{n}{c^{n} + G_{1}^{n}}\right]k_{2} - \gamma_{2}G_{2}$$
+$$\frac{dG_3}{dt} = \left[\frac{G_{2}^{n}{c^{n} + G_{2}^{n}}\right]k_{3} - \gamma_{3}G_{3}$$
 
 
 | Events                           | Rates                                                      |
