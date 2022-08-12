@@ -205,3 +205,5 @@ Where
 <p align="center">
   <img src="../main/Deterministic_vs_Stochastics_Modeling/Stochastic_Oscillator_1.jpg" />
 </p>
+
+The above figure shows the relation between Gene first ($G_{1}$) , Gene second($G_{2}$) and Gene third($G_{3}$)  over time. Along the x-axis, we have the time axis and along y-axis we have number of Gene first ($G_{1}$), Gene second$G_{2}$ and Gene 3($G_{3}$).  We observe that $G_{1}$(blue line) denotes Gene first, $G_{2}$(red line) denotes Gene second and $G_{3}$(green line) denotes Gene third. Each one have the oscillations but there is unevenly space because of the stochastic nature of this model. In compared to previous oscillator topic we did determistic ode model which was smooth but this is stochastic so they are still oscillating but it is much more random. 
