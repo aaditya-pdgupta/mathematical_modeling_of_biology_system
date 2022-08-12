@@ -18,4 +18,7 @@ A great challenge of modelling is to bring together the abstract, mathematical f
  
  * Central Dogma
  * Hill fucntion
+ * Oscillating Gene Network
+ * Gillespie Algorithm
+ * Deterministics vs Stochastics Modeling
  
