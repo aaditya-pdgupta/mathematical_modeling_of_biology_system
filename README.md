@@ -22,7 +22,7 @@ A great challenge of modelling is to bring together the abstract, mathematical f
  * Gillespie Algorithm
  * Deterministics vs Stochastics Modeling
  
-#Central Dogma
+# Central Dogma
 Central dogma of molecular biology is an explanation of the flow of genetics information within a biological system.It is often stated as "DNA makes RNA and RNA makes proteins". The transfer of information from nucleic acid to nucleic acid ,or from nucleic acid to protein may be possible but transfer from protein to protein or from protein to nucleic acid is impossible. Information means here precise determination of sequence either of bases in the nucleic acid or of amino acid residue in protein.
 The dogma is a framework for understanding the transfer of sequence information between information-carrying biopolymers in the most common or general case in living organism. There are 3 major classes of such biopolymers: DNA and RNA(both nucleic acids), and protein. There arew 3*3 = 9 conceivable direct transfer of information that can occur between these. The dogma classes these into 3 groups of 3:
 
