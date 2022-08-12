@@ -30,3 +30,21 @@ A great challenge of modelling is to bring together the abstract, mathematical f
 * 3 special transfers(known to occur, but only under specific conditions in case of some viruses or in a laboratory),
 * 3 unknown transfers(believed never to occur).
 ### The general transfers describe the normal flow of biological information: DNA can be copied to DNA (DNA replication), DNA information can be copied into mRNA, (transcription), and proteins can be synthesized using the information in mRNA as a template (translation).
+
+### The differential equation for model of central dogma:
+
+$$\frac{dm}{dt} = k_{m} -\gamma_{m}*{m}$$
+
+$$\frac{dp}{dt} = k_{p} * m -\gamma_{p}*{p}$$
+### where
+* p is protein
+* m is mRNA
+* $k_{m}$ is the production rate for the mRNA
+* $\gamma_{p}$ is the degradation rate of protein
+* $k_{p}$ is the production rate for the proteins
+* $\gamma_{m}$ is the degradation rate for mRNA 
+
+
+
+
+       
