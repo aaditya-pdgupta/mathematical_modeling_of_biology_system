@@ -66,12 +66,12 @@ The Central Dogma of molecular Biology states that DNA makes and RNA makes prote
 
 ## Activation Hill Function
 
-### In this  function Gene first ($G_{1}$) act as an activator  for Gene second($G_{2}$) and it increases the probablity of transcription often by increasing probability of RNA polymerase binding.
+In this  function Gene first ($G_{1}$) act as an activator  for Gene second($G_{2}$) and it increases the probablity of transcription often by increasing probability of RNA polymerase binding.
 
-### The differential equation for Activation Hil Function:
+The differential equation for Activation Hil Function:
 $$\frac{dG_1}{dt} = k_{1} - \gamma_{1}G_{1}$$
 $$\frac{dG_2}{dt} = \left[\frac{G_{1}^{n}}{c^{n} + G_{1}^{n}}\right]k_{2} - \gamma_{2}G_{2}$$
-### Where
+Where
 * $k_{1}$ is production rate of $G_{1}$
 * $\gamma_{1}$ is degradation rate of $G_{1}$
 * $k_{2}$ is production rate of $G_{2}$
