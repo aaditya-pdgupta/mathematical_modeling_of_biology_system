@@ -79,3 +79,6 @@ Where
 * c = constant
 * n =  hill constant 
        
+<p align="center">
+  <img src="../main/Hill_function/Hill_function_Activation_1.jpg" />
+</p>
