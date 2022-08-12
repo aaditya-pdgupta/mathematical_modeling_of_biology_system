@@ -162,3 +162,5 @@ Where
 <p align="center">
   <img src="../main/Gillespie_Algoritm/gillespie_algoritm_1.jpg" />
 </p>
+
+The above figures shows the relation between quantity of mRNA and protein over time.  Along the y-axis, we have the time axis and along x-axis we have abundance of both mRNA and protein. We observe that M(blue line) denotes quantity of  mRNA in the above fig. If we do the stimulation for hundred times or thousand times it will show average steady state near about 20 for above fig. Since it is stochastic model the steady state is not real because it is fluctuating near the steady state. 
