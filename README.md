@@ -24,19 +24,23 @@ A great challenge of modelling is to bring together the abstract, mathematical f
  
  # Central Dogma
 
-### Central dogma of molecular biology is an explanation of the flow of genetics information within a biological system.It is often stated as "DNA makes RNA and RNA makes proteins". The transfer of information from nucleic acid to nucleic acid ,or from nucleic acid to protein may be possible but transfer from protein to protein or from protein to nucleic acid is impossible. Information means here precise determination of sequence either of bases in the nucleic acid or of amino acid residue in protein.
-### The dogma is a framework for understanding the transfer of sequence information between information-carrying biopolymers in the most common or general case in living organism. There are 3 major classes of such biopolymers: DNA and RNA(both nucleic acids), and protein. There arew 3*3 = 9 conceivable direct transfer of information that can occur between these. The dogma classes these into 3 groups of 3:
+Central dogma of molecular biology is an explanation of the flow of genetics information within a biological system.It is often stated as "DNA makes RNA and RNA makes proteins". The transfer of information from nucleic acid to nucleic acid ,or from nucleic acid to protein may be possible but transfer from protein to protein or from protein to nucleic acid is impossible. Information means here precise determination of sequence either of bases in the nucleic acid or of amino acid residue in protein.
+
+The dogma is a framework for understanding the transfer of sequence information between information-carrying biopolymers in the most common or general case in living organism. There are 3 major classes of such biopolymers: DNA and RNA(both nucleic acids), and protein. There arew 3*3 = 9 conceivable direct transfer of information that can occur between these. The dogma classes these into 3 groups of 3:
 * 3 general transfers(believed to occur normally in most cells),
 * 3 special transfers(known to occur, but only under specific conditions in case of some viruses or in a laboratory),
 * 3 unknown transfers(believed never to occur).
-### The general transfers describe the normal flow of biological information: DNA can be copied to DNA (DNA replication), DNA information can be copied into mRNA, (transcription), and proteins can be synthesized using the information in mRNA as a template (translation).
 
-### The differential equation for model of central dogma:
+The general transfers describe the normal flow of biological information: DNA can be copied to DNA (DNA replication), DNA information can be copied into mRNA, (transcription), and proteins can be synthesized using the information in mRNA as a template (translation).
+
+ The differential equation for model of central dogma:
 
 $$\frac{dm}{dt} = k_{m} -\gamma_{m}*{m}$$
 
 $$\frac{dp}{dt} = k_{p} * m -\gamma_{p}*{p}$$
-### where
+
+where
+
 * p is protein
 * m is mRNA
 * $k_{m}$ is the production rate for the mRNA
@@ -44,10 +48,12 @@ $$\frac{dp}{dt} = k_{p} * m -\gamma_{p}*{p}$$
 * $k_{p}$ is the production rate for the proteins
 * $\gamma_{m}$ is the degradation rate for mRNA
 
+<p align="center">
+  <img src="../main/Central_Dogma/centra_dogma_1.jpg" />
+</p>
 
-## Observation
 
-### The above figure shows the relation between abundance of mRNA and protein over time.  Along the y-axis, we have the time axis and along x-axis we have abundance of both mRNA and protein. We observe that M(blue line) denotes mRNA in the above fig while P(red line) denotes protein.Both of them starts at zero and then they increases until they reach their steady state .The steady state for mRNA is 4 and for protein is 16 above. The abundance of protein is more than mRNA because it depends upon the mRNA production ( $k_{p} * m$ )while mRNA production is indepentent ($k_{m}$).
+The above figure shows the relation between abundance of mRNA and protein over time.  Along the y-axis, we have the time axis and along x-axis we have abundance of both mRNA and protein. We observe that M(blue line) denotes mRNA in the above fig while P(red line) denotes protein.Both of them starts at zero and then they increases until they reach their steady state .The steady state for mRNA is 4 and for protein is 16 above. The abundance of protein is more than mRNA because it depends upon the mRNA production ( $k_{p} * m$ )while mRNA production is indepentent ($k_{m}$).
 
 
 
