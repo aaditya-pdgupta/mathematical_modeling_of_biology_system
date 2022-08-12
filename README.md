@@ -56,5 +56,11 @@ where
 The above figure shows the relation between abundance of mRNA and protein over time.  Along the y-axis, we have the time axis and along x-axis we have abundance of both mRNA and protein. We observe that M(blue line) denotes mRNA in the above fig while P(red line) denotes protein.Both of them starts at zero and then they increases until they reach their steady state .The steady state for mRNA is 4 and for protein is 16 above. The abundance of protein is more than mRNA because it depends upon the mRNA production ( $k_{p} * m$ )while mRNA production is indepentent ($k_{m}$).
 
 
+# Hill Function
 
+The so called Hill Function were  introduced by A.V hill in 1910 to describe the binding of oxygen to hameoglobin. Subsequently,  they have been widely used in biochemistry, physicology and  mathematical modeling gene expression.
+
+The Central Dogma of molecular Biology states that DNA makes and RNA makes proteins.The process by which DNA is copied to RNA is called transcription and by which RNA is used to produce protein is translation. The hill function is expressed as follow:
+* Activation Hill Function 
+* Repression Hill Function
        
