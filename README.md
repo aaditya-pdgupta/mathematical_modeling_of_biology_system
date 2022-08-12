@@ -160,5 +160,5 @@ Where
 * $\gamma_{x}$ is the degradation rate for mRNA
 
 <p align="center">
-  <img src="../main/Gillespie_Algorithm/gillespie_algorithm_1.jpg" />
+  <img src="../main/Gillespie_Algorithm/gillespie_algoritm_1.jpg" />
 </p>
