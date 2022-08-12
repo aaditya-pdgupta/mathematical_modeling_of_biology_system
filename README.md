@@ -42,8 +42,12 @@ $$\frac{dp}{dt} = k_{p} * m -\gamma_{p}*{p}$$
 * $k_{m}$ is the production rate for the mRNA
 * $\gamma_{p}$ is the degradation rate of protein
 * $k_{p}$ is the production rate for the proteins
-* $\gamma_{m}$ is the degradation rate for mRNA 
+* $\gamma_{m}$ is the degradation rate for mRNA
 
+
+## Observation
+
+### The above figure shows the relation between abundance of mRNA and protein over time.  Along the y-axis, we have the time axis and along x-axis we have abundance of both mRNA and protein. We observe that M(blue line) denotes mRNA in the above fig while P(red line) denotes protein.Both of them starts at zero and then they increases until they reach their steady state .The steady state for mRNA is 4 and for protein is 16 above. The abundance of protein is more than mRNA because it depends upon the mRNA production ( $k_{p} * m$ )while mRNA production is indepentent ($k_{m}$).
 
 
 
