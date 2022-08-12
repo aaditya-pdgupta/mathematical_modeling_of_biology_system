@@ -173,8 +173,8 @@ The trajectory of deterministics modeling is compeletly defined by the initial p
 
 In computional biology one motive for using stochastics modeling is to calculate random variation in system which is not possible through determistics modelings. Here we will discuss about oscillating gene network same as above for stochastics modeling calculation.
 
-The differential equation for Stochastics Modelings:
 
+The differential equation for Stochastics Modelings:
 $$\frac{dG_1}{dt} = \left[\frac{c^{n}}{c^{n} + G_{3}^{n}}\right]k_{1} - \gamma_{1}G_{1}$$
 $$\frac{dG_2}{dt} = \left[\frac{G_{1}^{n}}{c^{n} + G_{1}^{n}}\right]k_{2} - \gamma_{2}G_{2}$$
 $$\frac{dG_3}{dt} = \left[\frac{G_{2}^{n}}{c^{n} + G_{2}^{n}}\right]k_{3} - \gamma_{3}G_{3}$$
@@ -190,7 +190,8 @@ $$\frac{dG_3}{dt} = \left[\frac{G_{2}^{n}}{c^{n} + G_{2}^{n}}\right]k_{3} - \gam
 | $$G_{3} \rightarrow G_{3} - 1$$  | $$\gamma_{3} G_{3}$$                                       |
 
 
-### Where
+Where
+
 * $k_{1}$ is production rate of $G_{1}$
 * $\gamma_{1}$ is degradation rate of $G_{1}$
 * $k_{2}$ is production rate of $G_{2}$
