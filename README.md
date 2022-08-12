@@ -9,5 +9,7 @@ A main problem is to find an appropriate mathematical formulation. Then, for fur
 </p>
 
 A great challenge of modelling is to bring together the abstract, mathematical formulation and concrete experimental data. The modelling process can be roughly described as follows.
+<p align="center">
+  <img src="../main/Latex/workflow_2.jpg" />
+</p>
 
-!
