@@ -22,3 +22,4 @@ A great challenge of modelling is to bring together the abstract, mathematical f
  * Gillespie Algorithm
  * Deterministics vs Stochastics Modeling
  
+ # Central Dogma
