@@ -23,3 +23,10 @@ A great challenge of modelling is to bring together the abstract, mathematical f
  * Deterministics vs Stochastics Modeling
  
  # Central Dogma
+
+### Central dogma of molecular biology is an explanation of the flow of genetics information within a biological system.It is often stated as "DNA makes RNA and RNA makes proteins". The transfer of information from nucleic acid to nucleic acid ,or from nucleic acid to protein may be possible but transfer from protein to protein or from protein to nucleic acid is impossible. Information means here precise determination of sequence either of bases in the nucleic acid or of amino acid residue in protein.
+### The dogma is a framework for understanding the transfer of sequence information between information-carrying biopolymers in the most common or general case in living organism. There are 3 major classes of such biopolymers: DNA and RNA(both nucleic acids), and protein. There arew 3*3 = 9 conceivable direct transfer of information that can occur between these. The dogma classes these into 3 groups of 3:
+* 3 general transfers(believed to occur normally in most cells),
+* 3 special transfers(known to occur, but only under specific conditions in case of some viruses or in a laboratory),
+* 3 unknown transfers(believed never to occur).
+### The general transfers describe the normal flow of biological information: DNA can be copied to DNA (DNA replication), DNA information can be copied into mRNA, (transcription), and proteins can be synthesized using the information in mRNA as a template (translation).
