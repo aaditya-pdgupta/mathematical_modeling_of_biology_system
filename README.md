@@ -139,3 +139,22 @@ Where
 </p>
 
 The above figure shows the relation between Gene first ($G_{1}$) , Gene second($G_{2}$) and Gene third($G_{3}$)  over time. Along the x-axis, we have the time axis and along y-axis we have number of Gene first ($G_{1}$), Gene second$G_{2}$ and Gene 3($G_{3}$).  We observe that $G_{1}$(blue line) denotes Gene first, $G_{2}$(red line) denotes Gene second and $G_{3}$(green line) denotes Gene third. In this figure we find oscillation with 3G network.Gene third $G_{3}$ is repressing $G_{1}$ which is negative feedback. Here $G_{1}$ is being produced that leads to $G_{2}$ production and $G_{2}$ is produced which leads to production of $G_{3}$. But $G_{3}$ produced stops $G_{1}$ from being produced. So that we get waves like this.      
+
+
+# Gillespie Algoritm
+
+The Gillespie Algoritm(or occasionally the Doob-Gillespie algorithm) generates a statistically correct trajectory(posssible solution) of a stochastic equation system for which the reaction rates are known. The algorithm was first presented by Doob in the mid 1940s. It was implented by Kendall in the 1950s. However it wasn't until the mid 1970s that Gillespie re-drived the method by studying physical systems that it became widely used. It is also sometime called as SSA method.
+
+For this let consider a gene as x and some mRNA is transcribed from x with production rate k and it will be degraded with rate $\gamma_{x}$. For this list, all the rate in array as {r = [k , $\gamma_{x}$]}. For this let choose a time point of the reaction. If we are at time t which could be zero or can be any time between algorithm. Then next time is going to be t + $\tau$ . Here we choose $\tau $ from exponential random distribution with the parameter lambda  which is the sum of all rates at time t. After choosing the time point it is important to know whether it will be production of mRNa or breakdown of mRNA . The rate for breakdown depends on the current level of x. If there will be x zero than $\gamma_{x}$ will be zero and there will be only production. But suppose if we have couple of x with some positive number . So to choose the event going to happen we take random draw between two of them and weight the probabilities accordingly. Here probability of production of mRNA that means probability of x going to x + 1{ P( x$\rightarrow$ x + 1) = ($\frac{k}{sum(r)}$)} and probability of breaking down of mRNA isthat means probability of x - 1 { P( x$\rightarrow$ x - 1) = ($\frac{\gamma_{x}}{sum(r)}$)}.
+
+The differential equation for this:
+$$\frac{dx}{dt} = k - \gamma x $$
+
+| Events                | Rates       |
+| --------------------- | ----------- |
+| x $\rightarrow$ x + 1 | k           |
+| x $\rightarrow$ x - 1 | $\gamma x $ |
+
+Where
+* k is the production rate for mRNA
+* $\gamma_{x}$ is the degradation rate for mRNA
