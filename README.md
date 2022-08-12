@@ -164,3 +164,37 @@ Where
 </p>
 
 The above figures shows the relation between quantity of mRNA and protein over time.  Along the y-axis, we have the time axis and along x-axis we have abundance of both mRNA and protein. We observe that M(blue line) denotes quantity of  mRNA in the above fig. If we do the stimulation for hundred times or thousand times it will show average steady state near about 20 for above fig. Since it is stochastic model the steady state is not real because it is fluctuating near the steady state. 
+
+# Deterministics vs Stochastics Modelings
+
+Deterministics modeling allows us to calculate a future event exactly without the involvement of randomness. stochastics modeling allows us to calculate a future event exactly with the involvement of randomness. In determinstics there is each set of initial condition so there is only one trajectory. Through this model we get smooth curve. The difference with stochastics model is that stochastics model involves some random component.
+
+The trajectory of deterministics modeling is compeletly defined by the initial parameters and conditions due to no involvement of randomness but in stochastics modeling with the same parameters and same initial conditions we get different tracjectories running at different times.
+
+In computional biology one motive for using stochastics modeling is to calculate random variation in system which is not possible through determistics modelings. Here we will discuss about oscillating gene network same as above for stochastics modeling calculation.
+
+The differential equation for Stochastics Modelings:
+
+$$\frac{dG_1}{dt} = \left[\frac{c^{n}}{c^{n} + G_{3}^{n}}\right]k_{1} - \gamma_{1}G_{1}$$
+$$\frac{dG_2}{dt} = \left[\frac{G_{1}^{n}}{c^{n} + G_{1}^{n}}\right]k_{2} - \gamma_{2}G_{2}$$
+$$\frac{dG_3}{dt} = \left[\frac{G_{2}^{n}}{c^{n} + G_{2}^{n}}\right]k_{3} - \gamma_{3}G_{3}$$
+
+| Events                           | Rates                                                      |
+| -------------------------------- | ---------------------------------------------------------- |
+| $$G_{1} \rightarrow G_{1} + 1$$  | $$\left[\frac{c^{n}}{c^{n} + G_{3}^{n}}\right]k_{1}$$      |
+| $$G_{1} \rightarrow G_{1} - 1$$  | $$\gamma_{1} G_{1}$$                                       |
+| $$G_{2} \rightarrow G_{2} + 1$$  | $$ \left[\frac{G_{1}^{n}}{c^{n} + G_{1}^{n}}\right]k_{2}$$ |
+| $$G_{2} \rightarrow G_{2} - 1$$  | $$\gamma_{2} G_{2}$$                                       |
+| $$G_{3} \rightarrow G_{3} + 1$$  | $$ \left[\frac{G_{2}^{n}}{c^{n} + G_{2}^{n}}\right]k_{3}$$ |
+| $$G_{3} \rightarrow G_{3} - 1$$  | $$\gamma_{3} G_{3}$$                                       |
+
+
+### Where
+* $k_{1}$ is production rate of $G_{1}$
+* $\gamma_{1}$ is degradation rate of $G_{1}$
+* $k_{2}$ is production rate of $G_{2}$
+* $\gamma_{2}$ is degradation rate of $G_{2}$
+* $k_{3}$ is production rate of $G_{3}$
+* $\gamma_{3}$ is degradation rate of $G_{3}$
+* c = constant
+* n =  hill constant 
