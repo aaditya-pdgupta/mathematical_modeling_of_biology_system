@@ -108,3 +108,28 @@ Where
 
 
 The above figure shows the relation between Gene first ($G_{1}$) and Gene second($G_{2}$)  over time. Along the x-axis, we have the time axis and along y-axis we have number of Gene first ($G_{1}$) and Gene second$G_{2}$.  We observe that $G_{1}$(blue line) denotes Gene first in the above fig while $G_{2}$(red line) denotes Gene second. Here (($G_{2}$) quickly get activated and reaches to the  peak point  but  $G_{1}$ protein start repressing it and suddenly it goes down . This show that $G_{1}$ act as repressor in this case.
+
+# 0scillating Gene Model
+
+Oscillating gene is a gene that is expressed in a rhythmic pattern or in periodic cycles.Oscillating genes are usually circadian and can be identified by periodic changes in the state of an organisms. Oscillating gene model is a complex gene network.
+
+Same as above, the Central Dogma of molecular Biology states that DNA makes and RNA makes proteins.The process by which DNA is copied to RNA is called transcription and by which RNA is used to produce protein is translation.
+
+For this model, let us consider Gene first as ($G_{1}$), Gene second as ( $G_{2}$) and Gene third($G_{3}$). $G_{1}$ activate the $G_{2}$ and facilitates the transcription of $G_{2}$ as a result $G_{2}$ get transcribed. It is positive interaction. $G_{2}$ does same for the $G_{3}$  and facilitates the transcription of $G_{3}$ as a result $G_{3}$ get transcribed.
+
+But  $G_{3}$  comes back to repress the transcription of  $G_{1}$.  $G_{3}$ is inhibiting the expression by blocking the transcription of  $G_{1}$.It is known as negative feedback because it is cascading  $G_{1}$ being transcribed and then activating  $G_{2}$ which later transcribe and help in activating  $G_{3}$. But  $G_{3}$  is negatively feeding back. This cause oscillation during stimulation.
+
+The differential equation for 0scillating Gene Model :
+$$\frac{dG_1}{dt} = \left[\frac{c^{n}}{c^{n} + G_{3}^{n}}\right]k_{1} - \gamma_{1}G_{1}$$
+$$\frac{dG_2}{dt} = \left[\frac{G_{1}^{n}}{c^{n} + G_{1}^{n}}\right]k_{2} - \gamma_{2}G_{2}$$
+$$\frac{dG_3}{dt} = \left[\frac{G_{2}^{n}}{c^{n} + G_{2}^{n}}\right]k_{3} - \gamma_{3}G_{3}$$
+
+Where
+* $k_{1}$ is production rate of $G_{1}$
+* $\gamma_{1}$ is degradation rate of $G_{1}$
+* $k_{2}$ is production rate of $G_{2}$
+* $\gamma_{2}$ is degradation rate of $G_{2}$
+* $k_{3}$ is production rate of $G_{3}$
+* $\gamma_{3}$ is degradation rate of $G_{3}$
+* c = constant
+* n =  hill constant 
