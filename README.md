@@ -86,3 +86,18 @@ Where
 
 The above figure shows the relation between Gene first ($G_{1}$) and Gene second($G_{2}$)  over time. Along the x-axis, we have the time axis and along y-axis we have number of Gene first ($G_{1}$) and Gene second$G_{2}$.  We observe that $G_{1}$(blue line) denotes Gene first in the above fig while $G_{2}$(red line) denotes Gene second. Here (($G_{1}$) quickly get activated and reaches to the steady point while $G_{2}$ delays. This is because for activating the $G_{2}$, $G_{1}$ should be produced.
 
+## Repression Hill Function
+
+In this  function Gene first ($G_{1}$) act as an repressor  for Gene second($G_{2}$) and it decreases the probablity of transcription often by decreasing probability of RNA polymerase binding.
+
+The differential equation for Repression Hil Function:
+$$\frac{dG_1}{dt} = k_{1} - \gamma_{1}G_{1}$$
+$$\frac{dG_2}{dt} = [\frac{c^{n}}{c^{n} + G_{1}^{n}}]k_{2} - \gamma_{2}G_{2}$$
+Where
+* $k_{1}$ is production rate of $G_{1}$
+* $\gamma_{1}$ is degradation rate of $G_{1}$
+* $k_{2}$ is production rate of $G_{2}$
+* $\gamma_{2}$ is degradation rate of $G_{2}$
+* c = constant
+* n =  hill constant 
+
