@@ -158,3 +158,7 @@ $$\frac{dx}{dt} = k - \gamma x $$
 Where
 * k is the production rate for mRNA
 * $\gamma_{x}$ is the degradation rate for mRNA
+
+<p align="center">
+  <img src="../main/Gillespie_Algorithm/gillespie_algorithm_1.jpg" />
+</p>
