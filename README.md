@@ -82,3 +82,7 @@ Where
 <p align="center">
   <img src="../main/Hill_function/Hill_function_Activation_1.jpg" />
 </p>
+
+
+The above figure shows the relation between Gene first ($G_{1}$) and Gene second($G_{2}$)  over time. Along the x-axis, we have the time axis and along y-axis we have number of Gene first ($G_{1}$) and Gene second$G_{2}$.  We observe that $G_{1}$(blue line) denotes Gene first in the above fig while $G_{2}$(red line) denotes Gene second. Here (($G_{2}$) quickly get activated and reaches to the  peak point  but  $G_{1}$ protein start repressing it and suddenly it goes down . This show that $_{1}$ act as repressor in this case.
+
