@@ -4,4 +4,4 @@ Mathematical modelling is a process by which a real world problem is described b
 
 A main problem is to find an appropriate mathematical formulation. Then, for further studies of the model, common mathematical tools can be used or new ones are developed. Shortly, a model should be as simple as possible and detailed as necessary or vive versa. One mathematical formulation may be appropriate for several real-world problem, even from very diofferent domains. 
 
-![workflow1](https://github.com/aaditya-pdgupta/mathematical_modeling_of_biology_system/blob/main/Latex/workflow_1.pdf)
+![workflow1](/mathematical_modeling_of_biology_system/Latex/workflow_1.pdf)
