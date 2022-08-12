@@ -199,6 +199,7 @@ $$\frac{dG_3}{dt} = \left[\frac{G_{2}^{n}}{c^{n} + G_{2}^{n}}\right]k_{3} - \gam
 * c = constant
 * n =  hill constant 
 
+
 <p align="center">
-  <img src="../main/Deterministics_vs_Stochastics_Modeling/Stochastic_Oscillator_1.jpg" />
+  <img src="../main/Deterministic_vs_Stochastics_Modeling/Stochastic_Oscillator_1.jpg" />
 </p>
