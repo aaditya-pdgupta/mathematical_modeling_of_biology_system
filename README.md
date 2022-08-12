@@ -137,3 +137,5 @@ Where
 <p align="center">
   <img src="../main/Oscillating_Gene_Network/Oscillating_Gene_Network_1.jpg" />
 </p>
+
+The above figure shows the relation between Gene first ($G_{1}$) , Gene second($G_{2}$) and Gene third($G_{3}$)  over time. Along the x-axis, we have the time axis and along y-axis we have number of Gene first ($G_{1}$), Gene second$G_{2}$ and Gene 3($G_{3}$).  We observe that $G_{1}$(blue line) denotes Gene first, $G_{2}$(red line) denotes Gene second and $G_{3}$(green line) denotes Gene third. In this figure we find oscillation with 3G network.Gene third $G_{3}$ is repressing $G_{1}$ which is negative feedback. Here $G_{1}$ is being produced that leads to $G_{2}$ production and $G_{2}$ is produced which leads to production of $G_{3}$. But $G_{3}$ produced stops $G_{1}$ from being produced. So that we get waves like this.      
