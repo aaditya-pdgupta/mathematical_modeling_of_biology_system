@@ -27,19 +27,23 @@ k = 2 # production rate
 gamma = 0.1 # degradation rate
 
 while t[-1] < tend:
-    current_x = x[-1] # gives latest value of x
+        # gives latest value of x
+    current_x = x[-1] 
     rates = [k, gamma * current_x]
     rate_sum = sum(rates)
-    tau = np.random.exponential(scale=1/rate_sum) # tau is the time points for next event
+    # tau is the time points for next event
+    tau = np.random.exponential(scale=1/rate_sum) 
     t.append(t[-1] + tau)
     rand = random.uniform(0,1)
-    if rand * rate_sum > 0 and rand * rate_sum < rates[0]:# production event
+    # production event
+    if rand * rate_sum > 0 and rand * rate_sum < rates[0]:
             x.append(x[-1] + 1)
-    elif rand * rate_sum > rates[0] and rand * rate_sum < rates[0] + rates[1]:# decay event
+        # production event
+    elif rand * rate_sum > rates[0] and rand * rate_sum < rates[0] + rates[1]:
             x.append(x[-1] - 1)plt.plot(t,x)
             
 plt.xlabel("time")
 plt.ylabel("mRNA quantity")
-#plt.show()
-plt.savefig("gillespie_algoritm_1.pdf", dpi=400,  bbox_inches='tight')
+plt.show()
+
             

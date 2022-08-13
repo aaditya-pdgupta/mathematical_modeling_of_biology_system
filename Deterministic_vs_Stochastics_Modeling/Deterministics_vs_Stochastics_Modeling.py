@@ -34,38 +34,47 @@ gamma_3 = 0.1
 n = 9
 c = 1
 
-while t[-1] < tend: # -1 means last value of t array
+# -1 means last value of t array
+while t[-1] < tend: 
     current_G1 = G1[-1]
     current_G2 = G2[-1]
     current_G3 = G3[-1]
     rates = [(c**n / (c**n + current_G3**n)) * k_1, gamma_1 * current_G1,\
     (current_G1**n / (c**n + current_G1**n)) * k_2, gamma_2 * current_G2,\
     (current_G2**n / (c**n + current_G2**n)) * k_3, gamma_3 * current_G3]
-    rate_sum = sum(rates) # sum of the rates 
-    tau = np.random.exponential(scale=1/rate_sum) # tau is the next point of time for event and the scale is the mean of distribution
+    rate_sum = sum(rates)
+    # tau is the next point of time for event 
+    # the scale is the mean of distribution
+    tau = np.random.exponential(scale=1/rate_sum) 
     t.append(t[-1] + tau)
     rand = random.uniform(0,1) 
-    if rand * rate_sum < rates[0]: # G1 production event 
+    # G1 production event 
+    if rand * rate_sum < rates[0]: 
             G1.append(G1[-1] + 1)
             G2.append(G2[-1])
             G3.append(G3[-1])
-    elif rand * rate_sum > rates[0] and rand * rate_sum < sum(rates[:2]): # G1 decay event 
+# G1 decay event 
+    elif rand * rate_sum > rates[0] and rand * rate_sum < sum(rates[:2]): 
             G1.append(G1[-1] - 1)
             G2.append(G2[-1])
             G3.append(G3[-1])
-    elif rand * rate_sum > sum(rates[:2]) and rand * rate_sum < sum(rates[:3]):# G2 production event
+# G2 production event
+    elif rand * rate_sum > sum(rates[:2]) and rand * rate_sum < sum(rates[:3]):
             G1.append(G1[-1])
             G2.append(G2[-1] + 1)
             G3.append(G3[-1])
-    elif rand * rate_sum > sum(rates[:3]) and rand * rate_sum < sum(rates[:4]): # G2 decay event 
+# G2 decay event 
+    elif rand * rate_sum > sum(rates[:3]) and rand * rate_sum < sum(rates[:4]): 
             G1.append(G1[-1])
             G2.append(G2[-1] - 1)
             G3.append(G3[-1])
-    elif rand * rate_sum > sum(rates[:4]) and rand * rate_sum < sum(rates[:5]): # G3 production event
+# G3 production event
+    elif rand * rate_sum > sum(rates[:4]) and rand * rate_sum < sum(rates[:5]): 
             G1.append(G1[-1])
             G2.append(G2[-1] )
             G3.append(G3[-1] + 1)
-    elif rand * rate_sum > sum(rates[:5]) and rand * rate_sum < sum(rates[:6]): # G3 decay event
+# G3 decay event
+    elif rand * rate_sum > sum(rates[:5]) and rand * rate_sum < sum(rates[:6]):
             G1.append(G1[-1])
             G2.append(G2[-1] )
             G3.append(G3[-1] - 1)
@@ -81,4 +90,4 @@ ax1.grid()
 ax2.grid()
 ax3.grid()
 plt.show()
-plt.savefig("Stochastic_Oscillator_1.pdf", dpi=400,  bbox_inches='tight')
+

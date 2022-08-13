@@ -22,19 +22,24 @@ gamma_m = 0.05 #degradtion rate should be less than production rate
 k_p = 0.4
 gamma_p = 0.1
 
-params = [k_m, gamma_m, k_p, gamma_p] #putting the params to array which will be passed in this offer
+#putting the params to array which will be passed in this offer
+params = [k_m, gamma_m, k_p, gamma_p] 
 
 def dogma(variables, t, params):
     m = variables[0]
     p = variables[1]
-    k_m = params[0]      #they are the first, second and so on element of the params arraygamma_m = params[1]
+    #they are the first, second and so on element of the params 
+    #arraygamma_m = params[1]
+    k_m = params[0] 
     k_p = params[2]
     gamma_p = params[3]
     dmdt = k_m - gamma_m * m
     dpdt = k_p * m - gamma_p * p
     return([dmdt,dpdt])
         
-y = odeint(dogma, y0, t, args=(params,)) #, is used for storing args and we get y matrix with two column one for p and another for m and row for every time point
+#, is used for storing args and we get y matrix with two column one for p
+#another for m and row for every time point
+y = odeint(dogma, y0, t, args=(params,)) 
 plt.plot(t,y[:,0], color="b", label="M")
 plt.plot(t,y[:,1], color="r", label="P")
 plt.xlabel("Abundance")
@@ -42,4 +47,4 @@ plt.ylabel("Time")
 plt.legend()
 plt.grid()
 plt.show()
-#plt.savefig("centra_dogma_1.pdf", dpi=400,  bbox_inches='tight')
+
