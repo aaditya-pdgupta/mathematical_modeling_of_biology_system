@@ -1,3 +1,4 @@
+The preprint version of this article is published on biorxiv. [https://doi.org/10.1101/2022.08.17.504297](https://doi.org/10.1101/2022.08.17.504297)
 # Introduction
 
 Mathematical modelling is a process by which a real world problem is described by a mathematical formulation. This procedure is a kind of abstraction, that means, neither all details of single processes will be described nor all aspects concerning the problem will be included.
